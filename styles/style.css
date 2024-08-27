@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --color-primario: #f3f5fc;
+  --color-secundario: #f3f5fc;
+  --color-terciario: #d8dfe8;
+
+  --font-primario: "Inter", sans-serif;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+body {
+  background-color: var(--color-primario);
+}
+
+
+.header img{
+  width: 7.5rem;
+  height: 3rem;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+}
+.form__Section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85dvh; /*Una forma "mejor" para ocupar la pantalla en varios dispositivos*/
+}

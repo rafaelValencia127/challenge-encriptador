@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img src="assests/Logo.png" alt="Logo" class="logo">
-        </header>
-        <div class="content-wrapper">
-            <main class="main-content">
-                <textarea id="input-text" placeholder="Ingrese el texto aquí"></textarea>
-                <div class="buttons">
-                    <button id="encrypt-btn">Encriptar</button>
-                    <button id="decrypt-btn">Desencriptar</button>
-                </div>
-            </main>
-            <aside class="output-section">
-                <img src="assests/Muñeco.png" alt="Mujer observando con una lupa un diamante" class="dolly" id="output-message">
-                <h2 id="output-message">Ningún mensaje fue encontrado</h2>
-                <p id="output-message">Ingrese el texto que desees encriptar o desencriptar</p>
-            </aside>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>encriptador</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/Logo.svg" alt="Logo alura" />
+    </header>
 
-    <script src="script.js"></script>
-</body>
+    <main class="main__container">
+      <form class="form__section">
+        <textarea
+          class="form__section"
+          name=""
+          id=""
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="container">
+          <div class="buttom__container">
+            <div>
+              <img src="assets/bi_exclamation-circle-fill.svg" /><span
+                >Solo letras minúsculas y sin acentos</span
+              >
+            </div>
+          </div>
+          <button type="submit">Cifrar</button>
+          <button type="submit">descifrar</button>
+        </div>
+      </form>
+
+      <aside class="encrypted__container">
+        <img
+          src="assets/Muñeco.svg"
+          alt="muñeco alura"
+          class="encrypted__img"
+        />
+        <div class="encrypted__container__">
+          <h2 class="encrypted__container__title">
+            Ningún mensaje fue encontrado
+          </h2>
+          <p class="encrypted__container__text">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>
