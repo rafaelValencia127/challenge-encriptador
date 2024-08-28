@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css" />
     <title>encriptador</title>
   </head>
@@ -11,24 +12,25 @@
       <img src="assets/Logo.svg" alt="Logo alura" />
     </header>
 
-    <main class="main__container">
+    <main>
       <form class="form__section">
         <textarea
-          class="form__section"
+          class="form__section__input"
           name=""
           id=""
           placeholder="Ingrese el texto aqui"
         ></textarea>
         <div class="container">
           <div class="buttom__container">
-            <div>
+            <div class="alert">
               <img src="assets/bi_exclamation-circle-fill.svg" /><span
                 >Solo letras minúsculas y sin acentos</span
               >
             </div>
           </div>
-          <button type="submit">Cifrar</button>
-          <button type="submit">descifrar</button>
+         
+          <input class="form__buttom" type="submit" value="Cifrar">
+          <input class="form__buttom--secundary" type="submit" value="descifrar">
         </div>
       </form>
 
